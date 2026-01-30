@@ -465,4 +465,17 @@ For STM32, the CMSIS-DSP library provides optimized `arm_rfft_fast_f32()` requir
 
 **Temperature effects:** Sound speed varies ~3 m/s per °C. At 20-30m range, a 5°C temperature error introduces ~0.5m range error—acceptable for obstacle detection but relevant for precision applications.
 
-The Open Echo community Discord provides active support for builders encountering issues. Start with their proven design, validate basic operation, then customize for the handheld diver application.
+## Resources & Community
+
+The [Open Echo project](https://github.com/Neumi/open_echo) by Neumi is the most relevant open-source foundation for this build. While the project is primarily designed for boat-mounted bathymetry and fish-finding, the creator has successfully built and tested a working handheld dive SONAR (July 2025) using the Open Echo All-In-One board, Raspberry Pi, and 7" display - achieving 25m+ underwater range in a CNC-machined polyethylene housing.
+
+**Important note:** There isn't a detailed step-by-step dive sonar build guide published yet. The dive sonar details are shared mainly through the Discord community. However, the core electronics, firmware, and principles are well-documented and could be adapted for this Aliens-inspired handheld concept.
+
+**Key resources:**
+- [GitHub: Neumi/open_echo](https://github.com/Neumi/open_echo) - Open source schematics, board layouts, and firmware (40kHz-1000kHz support)
+- [Hackaday.io project page](https://hackaday.io/project/196793-a-diy-open-source-sonar) - Build logs and development details
+- [Dive sonar firmware (STM32F103)](https://gist.github.com/Neumi/07914c59210a4e1291520d336d150dad) - Code used for the working dive sonar
+- [Discord community](https://discord.com/invite/rerCyqAcrw) - **Best place for dive sonar specifics**, active support, and to see build photos
+- [YouTube: Neumi](https://www.youtube.com/neumi) - Development videos
+
+**Hardware option:** The TUSS4470 Arduino Shield (~$50 from Elecrow) is a good starting point for learning and prototyping before committing to a full dive-rated build.
