@@ -1,0 +1,55 @@
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build outputs
+*.hex
+*.bin
+*.elf
+*.o
+*.obj
+
+# PCB design files (temporary)
+*.bak
+*.000
+*.b#*
+*.s#*
+*-cache.lib
+*-rescue.lib
+*.kicad_prl
+fp-info-cache
+
+# Simulation outputs
+*.raw
+*.log
+
+# Compiled Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+
+# Local configuration
+.env
+.env.local
+config.local.*
+
+# Large binary files (add manually if needed)
+*.zip
+*.tar.gz
+*.7z
