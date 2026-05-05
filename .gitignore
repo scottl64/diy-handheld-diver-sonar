@@ -53,3 +53,11 @@ config.local.*
 *.zip
 *.tar.gz
 *.7z
+
+# Security baseline
+.env.*
+*.pem
+*.key
+*.db
+*.sqlite
+*.sqlite3
